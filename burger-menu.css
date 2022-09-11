@@ -1,0 +1,61 @@
+.hamburgermenu-container {
+    z-index: 6;
+    width: 312px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-family: Yekan;
+    overflow-x: hidden;
+    transition: 0.5s;
+    transform: translateX(100%);
+    display: none;
+    
+}
+
+.burgermenu-logo {
+    width: 100%;
+    height: 65px;
+    padding: 30px 20px;
+    
+}
+
+.burgermenu-underline {
+    height: 1px;
+    background-color: #a1a3a8;
+    margin: 20px 20px;
+}
+
+.burgermenu-nav-bar-content {
+    padding: 0 20px;
+}
+
+.burgmenu-nav-bar-link-container a {
+    color: #424750;
+    font-weight: 600;
+}
+.burgermenu-nav-bar-links {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.burgermenu-nav-bar-links i {
+    margin-left: 20px;
+}
+
+.burgurmenu-nav-bar-categories {
+    padding: 0 20px;
+}
+
+.burgermenu-categories-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 20px 0;
+
+}

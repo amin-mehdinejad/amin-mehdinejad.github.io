@@ -1,0 +1,2852 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./burger-menu.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./fonts.css">
+
+    <script src="./main.js" defer></script>
+    <script src="./swiper.js" defer></script>
+    <title>DigiKala</title>
+</head>
+<body>
+    <header>
+        <div id="overlay"></div>
+        <div class="header-container">
+       
+            <div class="top-banner">
+                <img src="./images/top-banner1.jpg" alt="top-banner">
+            </div>
+        <!-- ----- responsive view 1024px ----- -->
+
+           <div class="mobile-menu-container px-3">
+            <div class="hamburger-menu" id="hamburgermenu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="mobile-logo-container">
+                <a href="#" class="w-100 h-100"></a>
+            </div> 
+
+            <div class="question-box text-center" style="border: 1px solid #a1a3a8; width: 24px; height: 24px;">
+                <i class="fa-solid fa-question"></i>
+            </div>
+       
+           </div>
+        <!-- ----- end responsive view 1024px ----- -->
+
+
+           <div class="top-container p-3 d-flex align-items-center">
+            <div class="logo-container">
+                <a href="#" class="w-100 h-100"></a>
+            </div> 
+            
+            <div class="flex1"> 
+                <div class="search-input-container d-flex align-items-center ">
+                
+                    <i class="fa fa-search"></i>
+                    <input type="search" name="" id="" placeholder="جستجو">
+                </div>
+            </div>
+            <div class="top-left-container d-flex align-items-center">
+                <div class="login-button d-flex justify-content-between align-items-center">
+                        <div>
+                        <i class="fas fa-arrow-right-to-bracket"></i>
+                        </div>
+                        <a class="login-link" href="#">ورود | ثبت نام</a>
+                    </div>
+               
+                    <div class="shopping-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+            </div>
+            </div>
+        </div> 
+
+        <!-- ----- main-header navbar ----- -->
+
+        <nav class="nav-bar px-3" id="nav-bar">
+            <div class="navbar-content-container d-flex justify-content-between align-items-center h-100">
+                <div class="row h-100 hide-on-lg nav-right-side-container">
+                    
+                    <div class="animated-border-bottom"></div>
+                    <div class="col nav-col-container ps-0" id="category-overlay">
+                        <div class="navbar-links-container position-relative">
+                            <a href="#" class="nav-links categories" id="main-header-category">
+                            <div class="pt-1"><i class="fas fa-bars"></i></div>
+                            <div class="ps-4 pe-1">دسته‌بندی‌کالا</div>
+                           </a>
+        
+                           <!-- ----- main-header mega-menu-drop-down----- -->
+                     
+                           <div class="mega-menu-drop-down-container" id="mega-menu">
+                            <div class="overflow-hidden d-flex w-100">
+                                <div class="mega-menu-drop-down-right-col-container">
+                                    <div class="mega-menu-drop-down-right-col-links-container">
+                                        <a href="#" class="mega-menu-drop-down-right-col-link" id="mega-menu-drop-down-right-col-firstItem">
+                                            <i class="fa-solid fa-laptop"></i>
+                                            <div>کالادیجیتال</div>   
+                                        </a>
+                                        
+                                        <a href="#" class="mega-menu-drop-down-right-col-link" id="mega-mega-menu-drop-down-right-col-secondItem">
+                                            <i class="fa-solid fa-wrench"></i>
+                                            <div>خودرو ابزار و تجهیزات صنعتی</div>
+                                        </a>
+                                        <a href="#" class="mega-menu-drop-down-right-col-link" id="mega-menu-drop-down-right-col-thirdItem">
+                                            <i class="fa-solid fa-shirt"></i>
+                                            <div>مد‌ و پوشاک</div>
+                                        </a>
+                                        <a href="#" class="mega-menu-drop-down-right-col-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                            <div>کالاهای سوپرمارکتی</div>
+                                        </a>
+                                        <a href="#" class="mega-menu-drop-down-right-col-link">
+                                            <i class="fa-solid fa-face-grin-beam-sweat"></i>
+                                            <div>اسباب بازی کودک و نوزاد</div>
+                                        </a>
+                                        <a href="#" class="mega-menu-drop-down-right-col-link">
+                                            <i class="fa-solid fa-cannabis"></i>
+                                            <div>محصولات بومی و محلی</div>
+                                        </a>
+                                        <a href="#" class="mega-menu-drop-down-right-col-link">
+                                            <i class="fa-solid fa-heart-circle-check"></i>
+                                            <div>زیبایی و سلامت</div>
+                                        </a>
+                                        <a href="#" class="mega-menu-drop-down-right-col-link">
+                                            <i class="fa-solid fa-chair"></i>
+                                            <div>خانه و آشپزخانه</div>
+                                        </a>
+                                        <a href="#" class="mega-menu-drop-down-right-col-link">
+                                            <i class="fa-solid fa-book"></i>
+                                            <div>کتاب لوازم تحریر و هنر</div>
+                                        </a>
+                                        <a href="#" class="mega-menu-drop-down-right-col-link">
+                                            <i class="fa-solid fa-campground"></i>
+                                            <div>ورزش و سفر</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 p-3 h-100">
+                                    <div class="w-100 h-100" id="first-row" style="display: flex;">
+                                        <div class="mega-menu-drop-down-mid-col-links-container">
+                                            <a href="#" class="font-yekan-w500 d-flex align-items-center mb-4">
+                                                <div class="ms-2">همه محصولات کالادیجیتال</div>
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </a>
+
+                                             <ul class="mega-menu-drop-down-mid-col-ul">
+                                                                                         
+                                                    <li class="">   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            لوازم‌ جانبی‌ گوشی
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کیف‌ و کاور گوشی</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">پاوربانک</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">پایه‌ و نگهدارنده‌ گوشی</a></li>
+
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            گوشی
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">سامسونگ</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">اپل</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">هواوی</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">شیامی</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">هانر</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">نوکیا</a></li>
+                                                    
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            واقعیت‌ مجازی
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>            
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            مچ‌بند و ساعت‌ هوشمند
+                                                            <i class="fa-solid fa-chevron-left pt-0 pe-2"></i>
+                                                        </a>
+                                                    </li>      
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            هدفون، هدست، هندزفری
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>      
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            اسپیکر بلوتوث‌ و باسیم
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>                            
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            هارد فلش و SSD
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            دوربین
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>  
+
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">دوربین عکاسی دیجیتال</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">دوربین ورزشی و فیلم برداری</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">دوربین چاپ سریع</a></li>   
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            لوازم‌ جانبی‌ دوربین
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>  
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">لنز</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کیف</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کارت‌ حافظه</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کاغذ چاپ‌ عکس</a></li>             
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           دوربین دوچشمی و شکاری
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            تلسکوپ
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>  
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            پلی‌استیشن‌،اکس‌باکس و بازی
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li>  
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            کامپیوتر و تجهزات‌ جانبی
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">تجهیزات مخصوص بازی</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">مانیتور</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کیس های اسمبل شده</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">قطعات داخلی کامپیوتر</a></li>                                   
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">ماوس</a></li>                                   
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کیبورد</a></li>  
+                                                    
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                            لپ‌تاپ
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           لوازم‌ جانبی‌ لپ‌تاپ
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کیف کوله و کاور</a></li>                                   
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کابل صدا AUX و HDMI</a></li>  
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           تبلت
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           شارژر تبلت و موبایل
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           کیف کاور و لوازم‌جانبی‌ تبلت
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           باتری
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           دوربین‌های تحت شبکه
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                          مودم و تجهیزات شبکه
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           ماشین های اداری
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">تلفن بی‌سیم و سانترال</a></li>                                   
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">فکس</a></li>                                   
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">پیرینتر</a></li>
+                                                    <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">لوازم‌ جانبی‌ اداری</a></li>                                   
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           کتابخوان و فیدیوبک
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+                                                    <li>   
+                                                        <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                           کارت هدیه خرید از دیجی‌کالا
+                                                            <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                        </a>
+                                                    </li> 
+
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-drop-down-left-col">
+                                            <a href="">
+                                                <img src="./images/mega-menu-drop-down-first-row.jpg" alt="" style="width: 285px;">
+                                            </a>
+                                        </div>
+
+
+                                        
+                                     </div>
+                                    <div class="w-100 h-100" id="second-row" style="display: none;">
+                                        <div class="mega-menu-drop-down-mid-col-links-container">
+                                            <a href="#" class="font-yekan-w500 d-flex align-items-center mb-4">
+                                                <div class="ms-2">همه محصولات خودرو ابزار و تجهزات‌ صنعتی</div>
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </a>
+                                            <ul class="mega-menu-drop-down-mid-col-ul">
+                                                                                         
+                                                <li class="">   
+                                                    <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                       خودرو‌های ایرانی و خارجی
+                                                        <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                    </a>
+                                                </li>
+                                                <li>   
+                                                    <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                        موتورسیکلت
+                                                        <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                    </a>
+                                                </li>                                               
+                                                <li>   
+                                                    <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                       لوازم جانبی خودرو و موتورسیکلت
+                                                        <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                    </a>
+                                                </li>            
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">لوازم تزیینی</a></li>
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">سیستم صوتی و تصویری</a></li>
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">نظافت و نگهداری خودرو</a></li>   
+                              
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کلاه کاسکت و  لوازم جانبی موتور</a></li>
+                                                <li>   
+                                                    <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                        لوازم یدکی خودرو و موتورسیکلت
+                                                        <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                    </a>
+                                                </li> 
+                                               
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">دیسک و صفحه کلاچ</a></li>
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">جلوبندی و تعلیق</a></li>
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">چراغ خودرو</a></li>
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">تسمه خودرو</a></li>                                   
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">کمک فنر</a></li>                                   
+                                                
+                                                <li>   
+                                                    <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                        لوازم مصرفی خودرو و موتورسیکلت
+                                                        <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                    </a>
+                                                </li> 
+                                              
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">لاستیک و تایر</a></li>                                   
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">لنت و ترمز</a></li>  
+ 
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">روغن موتور و ضد یخ</a></li>                                   
+                                                <li><a href="#" class="mega-menu-drop-down-mid-col-sub-links hover">مکمل سوخت و روغن و انواع فیلتر</a></li>                                   
+                                                                                
+                                                <li>   
+                                                    <a href="#" class="mega-menu-drop-down-mid-col-title-link hover">
+                                                      ابزار برقی
+                                                        <i class="fa-solid fa-chevron-left pe-2"></i>
+                                                    </a>
+                                                </li> 
+                                             
+
+                                        </ul>
+                                      
+                                     
+                                        </div>
+
+                                        <div class="mega-menu-drop-down-left-col">
+                                            <a href="">
+                                                <img src="./images/mega-menu-drop-down-first-row.jpg" alt="" style="width: 285px;">
+                                            </a>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                            
+                           </div>
+
+                        <!-- ----- end main-header mega-menu-drop-down----- -->
+                        </div>
+                    </div>
+                    <div class="col nav-col-container pe-0">
+                        <div class="navbar-links-container">
+                            <a href="#" class="nav-links supermarket">
+                            <div class="pt-1"><i class="fas fa-basket-shopping pe-2"></i></div>
+                            <div>سوپرمارکت</div>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="col nav-col-container">
+                        <div class="navbar-links-container">
+                            <a href="#" class="nav-links">
+                            <div class="pt-1"><i class="fas fa-fire"></i></div>
+                            <div>پرفروش‌ترین‌ها</div>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="col nav-col-container">
+                        <div class="navbar-links-container">
+                            <a href="#" class="nav-links">
+                            <div class="pt-1"><i class="fas fa-percent"></i></div>
+                            <div>تخفیف‌هاوپیشنهادها</div>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="col nav-col-container">
+                        <div class="navbar-links-container">
+                            <a href="#" class="nav-links ">
+                            <div class="pt-1"><i class="fas fa-tags"></i></div>
+                            <div>شگفت‌انگیزها</div>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="col nav-col-container">
+                        <div class="navbar-links-container">
+                            <a href="#" class="nav-links">
+                            <div>سوالی‌دارید؟</div>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="col nav-col-container">
+                        <div class="navbar-links-container">
+                            <a href="#" class="nav-links">
+                            <div>فروشنده‌شوید!</div>
+                           </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row w100-on-mobile-view nav-left-side-container">
+                    <div class="col">
+                        <div class="location-items-container">
+                                <a href="#" class="d-flex align-items-center justify-content-between" style="color: #424750;">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-location-dot ms-2"></i>
+                                    <div>لطفا شهر خود را انتخاب کنید</div>
+                                </div>
+                                <div class="location-left-arrow">
+                                    <i class="fas fa-chevron-left pt-1"></i>
+                                </div>
+                               </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </nav>
+
+     <!-- ----- end main-header mega-menu-drop-down----- -->
+
+
+     <!-- ----- burgermenu 1024px----- -->
+
+        <div class="hamburgermenu-container" id="show-burgermenu">
+            <div class="burgermenu-logo d-flex justify-content-between align-items-center">
+                <img src="./images/burgermenu-digi-logo.svg" alt="">
+                <div class="close-icon" id="hide-burgermenu" style="cursor: pointer;">
+                    <i class="fas fa-close" style="font-size: 20px;"></i>
+                </div>
+            </div>
+            <div class="burgermenu-underline"></div>
+            <div class="burgermenu-nav-bar">
+                    
+                    <div class="burgermenu-nav-bar-content">
+                        <div class="burgmenu-nav-bar-link-container">
+                            <a href="#" class="burgermenu-nav-bar-links">
+                                <div><i class="fas fa-basket-shopping"></i></div>
+                                <div>سوپرمارکت</div>
+                               </a>
+                               <a href="#" class="burgermenu-nav-bar-links">
+                                <div><i class="fas fa-fire"></i></div>
+                                <div>پرفروش‌ترین‌ها</div>
+                               </a>
+                               <a href="#" class="burgermenu-nav-bar-links">
+                                <div><i class="fas fa-percent"></i></div>
+                                <div>تخفیف‌هاوپیشنهادها</div>
+                               </a>
+                               <a href="#" class="burgermenu-nav-bar-links">
+                                <div><i class="fas fa-tags"></i></div>
+                                <div>شگفت‌انگیزها</div>
+                               </a>
+                               <a href="#" class="burgermenu-nav-bar-links">
+                                <div><i class="fas fa-question-circle"></i></div>
+                                <div>سوالی‌دارید؟</div>
+                               </a>
+                               <a href="#" class="burgermenu-nav-bar-links">
+                                <div><i class="fas fa-shop"></i></div>
+                                <div>فروشنده‌شوید</div>
+                               </a>
+                        </div>
+                        
+                    </div>
+                    <div class="burgermenu-underline"></div>
+
+                    <div class="burgurmenu-nav-bar-categories">
+                        <p style="font-size: 16px; font-weight: 600;">دسته‌بندی‌کالا</p>
+                        <div class="bergurmenu-categories-content">
+                            <div class="burgermenu-categories-link-container">
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>کالادیجیتال</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>خودرو ابزار و تجهیزات صنعتی</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>مد‌ و پوشاک</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>کالاهای سوپرمارکتی</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>اسباب بازی کودک و نوزاد</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>محصولات بومی و محلی</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>زیبایی و سلامت</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>خانه و آشپزخانه</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>کتاب لوازم تحریر و هنر</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a href="#" class="burgermenu-categories-links">
+                                    <div>ورزش و سفر</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+
+        <!-- ----- end burgermenu 1024px----- -->
+
+    </header>
+  
+    <section>
+
+    <!-- ----- main-swiper-slider----- -->
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider1.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider2.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider3.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider4.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider5.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider6.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider7.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider8.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./images/digi-main-slider-img/slider9.jpg" alt=""></a></div>
+
+        </div>
+        <div class= "show-on-mouseOver">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+    <!-- ----- end main-swiper-slider----- -->
+
+
+     
+
+     </section>
+
+    <section>
+
+        <!-- ----- digi-servic-links----- -->
+
+        <div class="container py-5 px-lg-5">
+            <div class="digi-servic-links px-lg-5">
+            <div>
+                <a class="d-flex flex-column align-items-center" href="#">
+                    <div class="digi-servic-links-img-container">
+                        <img class="w-100 h-100" src="./images/digi-service-img/digijet.png" alt="">
+                    </div>
+                    <span>دیجی‌کالا جت</span>
+                </a>
+            </div>
+            <div>
+                <a class="d-flex flex-column align-items-center" href="#">
+                    <div class="digi-servic-links-img-container">
+                        <img class="w-100 h-100" src="./images/digi-service-img/digioffsale.png" alt="">
+                    </div>
+                    <span>حراچ دیجی استایل</span>
+                </a>
+            </div>
+            <div>
+                <a class="d-flex flex-column align-items-center" href="#">
+                    <div class="digi-servic-links-img-container">
+                        <img class="w-100 h-100" src="./images/digi-service-img/digipay.png" alt="">
+                    </div>
+                    <span>دیجی‌پی</span>
+                </a>
+            </div>
+            <div>
+                <a class="d-flex flex-column align-items-center" href="#">
+                    <div class="digi-servic-links-img-container">
+                        <img class="w-100 h-100" src="./images/digi-service-img/digikalamehr.png" alt="">
+                    </div>
+                    <span>دیجی‌کالا مهر</span>
+                </a>
+            </div>
+            <div>
+                <a class="d-flex flex-column align-items-center" href="#">
+                    <div class="digi-servic-links-img-container">
+                        <img class="w-100 h-100" src="./images/digi-service-img/digiplus.png" alt="">
+                    </div>
+                    <span>تولد دیجی‌پلاس</span>
+                </a>
+            </div>
+            <div>
+                <a class="d-flex flex-column align-items-center" href="#">
+                    <div class="digi-servic-links-img-container">
+                        <img class="w-100 h-100" src="./images/digi-service-img/missions.png" alt="">
+                    </div>
+                    <span>ماموریت‌ها</span>
+                </a>
+            </div>
+            <div>
+                <a class="d-flex flex-column align-items-center" href="#">
+                    <div class="digi-servic-links-img-container">
+                        <img class="w-100 h-100" src="./images/digi-service-img/digi-club.png" alt="">
+                    </div>
+                    <span>دیجی‌کلاب</span>
+                </a>
+            </div>
+            <div>
+                <a class="d-flex flex-column align-items-center" href="#">
+                    <div class="digi-servic-links-img-container d-flex align-items-center justify-content-center rounded-circle" style="background-color: #a1a3a8;">
+                        <i class="fa-solid fa-ellipsis" style="font-size: 30px;"></i>
+                    </div>
+                    <span>بیشتر</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- ----- end digi-servic-links----- -->
+
+        <!-- ----- amazing-offer-swiper ----- -->
+
+        <div class="amazing-offer-box-swiper-container pt-5 pb-1">
+            
+            <div class="overflow-hidden bg-danger py-3 position-relative" style="height: 286px; border: solid rgb(220,53,69) 2px; border-radius: 12px;">
+                <div class="amazing-offer-swiper amazingOfferSwiper">
+                <div class="swiper-wrapper swiperWrapperOnTransition" id="swiperWrapperOnTransition">
+                    <div class="swiper-slide">
+                        <a href="#" class="w-100 h-100 bg-danger">
+                            <div class="d-flex flex-column justify-content-center mx-auto">
+                            <img class="amazing-offer-text-img" src="./images/digi-amazin-offer-slider-img/amazing-typo.svg" alt="">
+                            <img src="./images/digi-amazin-offer-slider-img/img1.png" alt="">
+                            <div class="amazing-offer-see-more-start-container d-flex align-items-center justify-content-center">
+                                <span>مشاهده همه</span>
+                                <i class="fas fa-chevron-left pt-1 me-2"></i>
+
+                            </div>
+                            </div>
+                        </a>
+                    </div>  
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img2.jpg" alt="">
+                            <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۸٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۸۹,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img3.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۱٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۱۹۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img6.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۴٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۱۵۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img4.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۸٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۷۰,۰۰۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۲۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img5.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۹٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۴۳۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img6.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۲۵٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۱۷۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img7.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۸٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۱۵۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img2.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۳۴٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۱۲۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img3.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۰٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۳۵۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img4.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۸٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۱۲۵۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img5.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۸٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۱۵۲۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img6.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۸٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۴۵۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img class="amazing-off-swiper-img" src="./images/digi-amazin-offer-slider-img/img7.jpg" alt="">
+                             <div class="price-container position-absolute bottom-0 w-100">
+                                <div class="price-items d-flex justify-content-between align-items-center">
+                                                                
+                                    <span class="discount-percentage px-2">۱۸٪</span>   
+                                    <div class="d-flex align-items-center">
+                                    <span class="off-price mx-1">۱۵۰,۴۵۰</span>
+                                    <span>تومان</span>
+                                    </div>
+                                  
+                                    </div>
+                                    <span class="main-price">۵,۵۲۳,۴۰۰</span>
+                                
+                                </div>
+                        </a>
+                    </div>  
+                    <div class="swiper-slide">
+                        <a href="#">
+
+                            <div class="amazing-offer-see-more-end-container d-flex flex-column align-items-center pos-absolute">
+                                <span class="circle">
+                                <i class="fas fa-chevron-left" style="color: #19bfd3;"></i>
+
+                                </span>
+                                
+                                <span style="font-size: 14px; color: #424750; margin-top: 12px;">مشاهده همه</span>
+        
+                            </div>             
+                          
+                        </a>
+                    </div>            
+                </div>
+                <div>
+                
+                <div class="amazing-offer-swiper-button-next swiper-button-disabled">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="amazing-offer-swiper-button-prev swiper-button-disabled">
+                    <i class="fas fa-chevron-left"></i>
+
+                </div>
+                </div>
+                
+               <div class="amazing-offer-swiper-pagination"></div>
+                
+              </div>
+            </div>
+        </div>
+
+        <!-- ----- end amazing-offer-swiper ----- -->
+
+        <!-- ----- digi-discount-cards-and-banners  ----- -->
+
+        <div class="amazing-supermarket-discount p-sm-4 d-lg-flex justify-content-between align-items-center">
+                <div class="flex-sm-shrink-0 shrink-on-sm ">
+                    <a class="d-flex align-items-center" href="#">
+                   
+                        <div>
+                            <img src="./images/amazing-supermarket-img/fresh.png" alt="">
+    
+                        </div>
+                        <div class="mx-3">
+                            <img class="amazing-supermarket-discount-fresh-img" src="./images/amazing-supermarket-img/fresh.svg" alt="">
+                        </div>
+                        <div class="amazing-discounts" style="background-color:rgb(57, 174, 0);">تا %۵۰ تخفیف</div>
+                    </a>
+                </div>
+
+               <div class="amazing-discount-circle-img-container d-flex align-items-center">
+                <a href="" class="position-relative">
+                    <div class="amazing-discount-circle-img">
+                        <img src="./images/amazing-supermarket-img/img1.jpg" class="w-100 rounded-circle" alt="">
+                    </div>
+                    <span class="discount-percentage px-2 position-absolute" style="bottom: -2px; right: -5px;">۱۸٪</span>   
+                    
+                </a>
+                <a href="" class="position-relative">
+                    <div class="amazing-discount-circle-img">
+                        <img src="./images/amazing-supermarket-img/img2.jpg" class="w-100 rounded-circle" alt="">
+                    </div>
+                    <span class="discount-percentage px-2 position-absolute" style="bottom: -2px; right: -5px;">۳۸٪</span>   
+                    
+                </a>
+                <a href="" class="position-relative">
+                    <div class="amazing-discount-circle-img">
+                        <img src="./images/amazing-supermarket-img/img3.jpg" class="w-100 rounded-circle" alt="">
+                    </div>
+                    <span class="discount-percentage px-2 position-absolute" style="bottom: -2px; right: -5px;">۴۸٪</span>   
+                    
+                </a>
+                <a href="" class="position-relative remove-on-xl">
+                    <div class="amazing-discount-circle-img">
+                        <img src="./images/amazing-supermarket-img/img4.jpg" class="w-100 rounded-circle" alt="">
+                    </div>
+                    <span class="discount-percentage px-2 position-absolute" style="bottom: -2px; right: -5px;">۲۴٪</span>   
+                    
+                </a>
+                <a href="" class="position-relative remove-on-xl">
+                    <div class="amazing-discount-circle-img">
+                        <img src="./images/amazing-supermarket-img/img5.jpg" class="w-100 rounded-circle" alt="">
+                    </div>
+                    <span class="discount-percentage px-2 position-absolute" style="bottom: -2px; right: -5px;">۳۱٪</span>   
+                    
+                </a>
+                <a href="" class="position-relative remove-on-xl">
+                    <div class="amazing-discount-circle-img">
+                        <img src="./images/amazing-supermarket-img/img6.jpg" class="w-100 rounded-circle" alt="">
+                    </div>
+                    <span class="discount-percentage px-2 position-absolute" style="bottom: -2px; right: -5px;">۱۵٪</span>   
+                    
+                </a>
+                <a class="more-product-link d-flex align-items-center" href="#">
+                    <div class="ms-3 d-none d-sm-block">بیش از ۹۰ کالا</div>
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </a>
+               </div>
+             
+               
+            </a>
+            
+        </div>
+        
+        <div class="digi-discount-cards-container pt-2">
+            <div>
+                <img class="rounded-4" src="./images/discount-cards-img/img1.jpg" alt="">
+            </div>
+            <div>
+                <img class="rounded-4" src="./images/discount-cards-img/img2.jpg" alt="">
+            </div>
+            <div>
+                <img class="rounded-4" src="./images/discount-cards-img/img3.jpg" alt="">
+            </div>
+            <div>
+                <img class="rounded-4" src="./images/discount-cards-img/img4.jpg" alt="">
+            </div>
+        </div>
+        <div class="digi-category-container text-center py-2 px-5">
+            <h4 class="mt-2 mb-4">دسته‌بندی‌ دیجی‌کالا</h4>
+
+            <div class="digi-category-item-container">
+            
+                <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img5.png" alt="">
+                </div>
+                <p>کالای دیجیتال</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img4.png" alt="">
+                </div>
+                <p>خودرو، ابزار و تجهیزات صنعتی</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img3.png" alt="">
+                </div>
+                <p>مد و پوشاک</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img2.png" alt="">
+                </div>
+                <p>کالاهای سوپرمارکتی</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img1.png" alt="">
+                </div>
+                <p>اسباب بازی کودک و نوزاد</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img10.png" alt="">
+                </div>
+                <p>محصولات بومی و محلی</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img9.png" alt="">
+                </div>
+                <p>زیبایی و سلامت</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img8.png" alt="">
+                </div>
+                <p>خانه و اشپزخانه</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img7.png" alt="">
+                </div>
+                <p>کتاب و لوازم تحریر</p>
+               </a>
+               <a href="#" class="text-center">
+                <div class="digi-category-img-container">
+                    <img class="w-100 h-100" src="./images/digi-grid-category-img/img6.png" alt="">
+                </div>
+                <p>ورزش و سفر</p>
+               </a>
+            </div>
+        </div>
+       <div class="digi-discount-banner pt-5">
+        <div class="col">
+            <a href="#">
+                <img src="./images/digi-discount-banner-img/img1.jpg" alt="">
+            </a>
+        </div>
+        <div class="col">
+            <a href="#">
+                <img src="./images/digi-discount-banner-img/img2.jpg" alt="">
+            </a>
+        </div>
+    
+       </div>
+        
+       <!-- ----- end digi-discount-cards-and-banners ----- -->
+
+       <!-- ----- digi-offer-multicolumn-swiper ----- -->
+
+        <div class="digi-offer-multicolumn-swiper-container py-5 ">
+            <div class="text-center">
+                <h4 class="mb-4">پیشنهاد دیجی‌کالا</h4>
+            </div>
+            <div class="digi-offer-multicolumn-swiper multiColumnSwiper border rounded-4 overflow-hidden position-relative">
+                <div class="swiper-wrapper" id="swiperWrapperOnTransition1">
+                  <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3" style="border-right:none ;">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img1.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3" style="border-right:none ;">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img2.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img3.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img4.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img5.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img6.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img7.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img8.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img3.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img10.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img9.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img2.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img5.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img3.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img1.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img2.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img3.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img8.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img6.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img7.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img9.jpg" alt=""></div>
+                            <p>هدفون،هدست</p>
+                        </a>
+                          <a href="#" class="d-flex flex-column align-items-center justify-content-center p-3">
+                            <div class="digi-offer-multicolumn-swiper-slide-img-container"><img src="./images/digi-offer-grid-slider-img/img8.jpg" alt=""></div>
+                            <p>لپ‌تاپ</p>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                
+              <div class="digi-offer-multicolumn-swiper-pagination"></div>
+              </div>
+              
+                    <div class="digi-offer-multicolumn-swiper-button-next swiper-button-disabled">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="digi-offer-multicolumn-swiper-button-prev swiper-button-disabled">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+              
+                
+        </div>
+        </div>
+       <!-- ----- end digi-offer-multicolumn-swiper ----- -->
+
+       <!-- ----- popular-brands-swiper ----- -->
+
+        <div class="popular-brands-swiper-container border rounded-4 position-relative">
+               
+                <div class="popular-brands-swiper popularBrandSwiper overflow-hidden mb-4">
+                    <div class="text-center my-4">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="fas fa-star mx-2 pb-1" style="color: rgba(248, 211, 0, 0.89);"></i>
+                            <h4>محبوب‌ترین بندها</h4>
+                        </div>
+    
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img6.png" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img2.jpg" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img5.png" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img4.jpg" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img3.png" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img1.png" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img2.jpg" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img4.jpg" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img6.png" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img2.jpg" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img4.jpg" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img3.png" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img5.png" alt="">
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="popular-brands-img-container">
+                                <img src="./images/popular-brands-img/img2.jpg" alt="">
+                            </div>
+                        </a>
+                      </div>
+
+                      
+                      
+                        
+                    </div>
+                    
+                    
+                  <div class="popular-brands-swiper-pagination"></div>
+                  </div>
+                  
+                        <div class="popular-brands-swiper-button-next swiper-button-disabled">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="popular-brands-swiper-button-prev swiper-button-disabled">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                  
+            </div>
+
+       <!-- ----- end popular-brands-swiper ----- -->
+
+
+        <div class="digi-discount-banner py-3 flex-col">
+            <div class="col">
+                <a href="#">
+                    <img class="img-fluid" src="./images/digi-discount-banner-img/img3.jpg" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img class="img-fluid" src="./images/digi-discount-banner-img/img4.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+       <!-- ----- user-most-viewed-section ----- -->
+
+        <div class="user-most-viewed-grid-container rounded-4 my-2 p-3">
+           <div class="user-most-viewed-grid-column-container">
+            <div class="user-most-viewed-grid-column-title">
+                <h5>گوشی موبایل</h5>
+                <p>براساس بازدیدهای شما</p>
+            </div>
+            <div class="user-most-viewed-grid-column-img-container">
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img1.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img2.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img3.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img4.jpg" alt=""></div>
+
+            </div>
+            <div class="user-most-viewed-grid-column-link-container d-flex justify-content-center py-3">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="mx-2">مشاهده</div>
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </div>
+           </div>
+           <div class="user-most-viewed-grid-column-container">
+            <div class="user-most-viewed-grid-column-title">
+                <h5>گوشی موبایل</h5>
+                <p>براساس بازدیدهای شما</p>
+            </div>
+            <div class="user-most-viewed-grid-column-img-container">
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img1.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img2.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img3.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img4.jpg" alt=""></div>
+
+            </div>
+            <div class="user-most-viewed-grid-column-link-container d-flex justify-content-center py-3">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="mx-2">مشاهده</div>
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </div>
+           </div>
+           <div class="user-most-viewed-grid-column-container">
+            <div class="user-most-viewed-grid-column-title">
+                <h5>گوشی موبایل</h5>
+                <p>براساس بازدیدهای شما</p>
+            </div>
+            <div class="user-most-viewed-grid-column-img-container">
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img1.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img2.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img3.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img4.jpg" alt=""></div>
+
+            </div>
+            <div class="user-most-viewed-grid-column-link-container d-flex justify-content-center py-3">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="mx-2">مشاهده</div>
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </div>
+           </div>
+           <div class="user-most-viewed-grid-column-container" style="border-left:none ;">
+            <div class="user-most-viewed-grid-column-title">
+                <h5>گوشی موبایل</h5>
+                <p>براساس بازدیدهای شما</p>
+            </div>
+            <div class="user-most-viewed-grid-column-img-container">
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img1.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img2.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img3.jpg" alt=""></div>
+               <div><img class="img-fluid" src="./images/user-most-viewed-img/img4.jpg" alt=""></div>
+
+            </div>
+            <div class="user-most-viewed-grid-column-link-container d-flex justify-content-center py-3">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="mx-2">مشاهده</div>
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </div>
+           </div>
+           
+        </div>
+
+        <!-- ----- end user-most-viewed-section ----- -->
+
+        <!-- ----- digiplus-especial-services  ----- -->
+
+        <div class="digiplus-especial-services-container mt-4 border rounded-4 p-3">
+            <div class="digiplus-especial-services-grid-container">
+                
+                    <div class="digiplus-especial-services-right-col d-flex flex-column pt-4 px-3">
+                        <a href="#"><img src="./images/digiplus-logo.svg" alt=""></a>
+                        <p style="word-spacing: 3px; margin: 8px 0;">خدمات ویژه برای اعضای دیجی‌پلاس</p>
+                        <span class="digiplus-signup-button">
+                        <a href="#" class="d-flex align-items-center justify-content-between bg-transparent">
+                            عضویت
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-arrow-left pt-1"></i>
+                            </div>
+                        </a>
+                        </span>
+                        <div class="ghost-element" style="width: 300px; height: 100px; background-color: transparent;"></div>
+                    </div>
+               
+               
+                    <div class="digiplus-especial-services-left-col bg-light rounded-3 p-4">
+                        <div class="d-flex justify-content-between flex-shrink-0">
+                            <div class="digiplus-especial-services-left-col-title">
+                                <i class="fas fa-money-bill pt-1 ps-2"></i>
+                                <p>هدیه نقدی</p>
+
+                            </div>
+                            <a href="#" class="digiplus-especial-services-more-items">
+                                <p>مشاهده همه</p>
+                                <i class="fas fa-chevron-left pt-1 pe-2"></i>
+                            </a>
+                        </div>
+                        <div class="digiplus-especial-services-gifts">
+
+                                <a href="#"><img class="img-fluid" src="./images/digi-plus-services-img/img1.jpg" alt=""></a>
+                                <a href="#"><img class="img-fluid" src="./images/digi-plus-services-img/img2.jpg" alt=""></a>
+                                
+                                
+                                <a href="#"><img class="img-fluid" src="./images/digi-plus-services-img/img3.jpg" alt=""></a>
+                                <a href="#"><img class="img-fluid" src="./images/digi-plus-services-img/img4.jpg" alt=""></a>
+                                
+                                
+                                <a href="#"><img class="img-fluid " src="./images/digi-plus-services-img/img5.jpg" alt=""></a>
+                                <a href="#"><img class="img-fluid " src="./images/digi-plus-services-img/img6.jpg" alt=""></a>
+                                
+                        </div>
+                    </div>
+
+    
+                    <div class="digiplus-especial-services-left-col bg-light rounded-3 p-4">
+                        <div class="d-flex justify-content-between flex-shrink-0">
+                            <div class="digiplus-especial-services-left-col-title">
+                                <i class="fas fa-rocket pt-1 ps-2"></i>
+                                <p>ارسال فوری</p>
+
+                            </div>
+                            <a href="#" class="digiplus-especial-services-more-items">
+                                <p>مشاهده همه</p>
+                                <i class="fas fa-chevron-left pt-1 pe-2"></i>
+                            </a>
+                        </div>
+                        <div class="digiplus-especial-services-gifts">
+                                
+                                <a href="#"><img class="img-fluid" src="./images/digi-plus-services-img/img12.jpg" alt=""></a>
+                                <a href="#"><img class="img-fluid" src="./images/digi-plus-services-img/img11.jpg" alt=""></a>
+                                
+                                
+                                <a href="#"><img class="img-fluid" src="./images/digi-plus-services-img/img10.jpg" alt=""></a>
+                                <a href="#"><img class="img-fluid" src="./images/digi-plus-services-img/img9.jpg" alt=""></a>
+                                
+                                
+                                <a href="#"><img class="img-fluid " src="./images/digi-plus-services-img/img8.jpg" alt=""></a>
+                                <a href="#"><img class="img-fluid " src="./images/digi-plus-services-img/img7.jpg" alt=""></a>
+                                
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <!-- ----- end digiplus-especial-services  ----- -->
+
+        <!-- ----- digiclub-banner ----- -->
+
+       <div class="digiclub-banner-container d-flex justify-content-between align-items-center my-2 rounded-4 py-3 px-2">
+       
+        <div class="digiclub-banner-logo pe-4">
+            <img class="img-fluid" src="./images/digiclub-logo-white.svg" alt="" style="width: 119px;">
+        </div>  
+      
+        <div class="digiclub-banner-left-side-container flex-grow-1">
+        <div class="digiclub-banner-left-side-items d-flex align-items-center overflow-hidden rounded-1 gap-1">
+        <div class="digiclub-banner-items d-flex align-items-center">
+            <a href="#" class="d-flex align-items-center bg-light">
+                <span class="d-flex align-items-center">
+                    <i class="fa-solid fa-bell px-2"></i>
+                    <p>گردونه شانس</p>
+                </span>
+                <div style="height: 60px;">
+                    <img class="h-100" src="./images/digiclub-banner-img/lucky-draw.png" alt="">
+                </div>
+            </a>
+        </div>     
+        <div class="digiclub-banner-items d-flex align-items-center">
+            <a href="#" class="d-flex align-items-center bg-light">
+                <span class="d-flex align-items-center">
+                    <i class="fa-solid fa-bell px-2"></i>
+                    <p>ماموریت‌ها</p>
+                </span>
+                <div style="height: 60px;">
+                    <img class="img-fluid h-100" src="./images/digiclub-banner-img/missions.png" alt="">
+                </div>
+            </a>
+        </div>     
+        <div class="digiclub-banner-items d-flex align-items-center">
+            <a href="#" class="d-flex align-items-center">
+                <span class="d-flex align-items-center">
+                    <i class="fa-solid fa-bell px-2"></i>
+                    <p>جایزه‌ها</p>
+                </span>
+                <div style="height: 60px;">
+                    <img class="img-fluid h-100" src="./images/digiclub-banner-img/awards.png" alt="">
+                </div>
+            </a>
+        </div>     
+        
+        </div>   
+        </div>
+        </div>
+
+        <!-- ----- end digiclub-banner ----- -->
+
+
+        <!-- ----- user-most-viewed-section ----- -->
+
+
+            <div class="user-most-viewed-grid-container rounded-4 my-4 p-3">
+            <div class="user-most-viewed-grid-column-container">
+             <div class="user-most-viewed-grid-column-title">
+                 <h5>گوشی موبایل</h5>
+                 <p>براساس بازدیدهای شما</p>
+             </div>
+             <div class="user-most-viewed-grid-column-img-container">
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img1.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img2.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img3.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img4.jpg" alt=""></div>
+ 
+             </div>
+             <div class="user-most-viewed-grid-column-link-container d-flex justify-content-center py-3">
+                 <a href="#" class="d-flex align-items-center">
+                     <div class="mx-2">مشاهده</div>
+                     <i class="fas fa-chevron-left"></i>
+                 </a>
+             </div>
+            </div>
+            <div class="user-most-viewed-grid-column-container">
+             <div class="user-most-viewed-grid-column-title">
+                 <h5>گوشی موبایل</h5>
+                 <p>براساس بازدیدهای شما</p>
+             </div>
+             <div class="user-most-viewed-grid-column-img-container">
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img1.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img2.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img3.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img4.jpg" alt=""></div>
+ 
+             </div>
+             <div class="user-most-viewed-grid-column-link-container d-flex justify-content-center py-3">
+                 <a href="#" class="d-flex align-items-center">
+                     <div class="mx-2">مشاهده</div>
+                     <i class="fas fa-chevron-left"></i>
+                 </a>
+             </div>
+            </div>
+            <div class="user-most-viewed-grid-column-container">
+             <div class="user-most-viewed-grid-column-title">
+                 <h5>گوشی موبایل</h5>
+                 <p>براساس بازدیدهای شما</p>
+             </div>
+             <div class="user-most-viewed-grid-column-img-container">
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img1.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img2.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img3.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img4.jpg" alt=""></div>
+ 
+             </div>
+             <div class="user-most-viewed-grid-column-link-container d-flex justify-content-center py-3">
+                 <a href="#" class="d-flex align-items-center">
+                     <div class="mx-2">مشاهده</div>
+                     <i class="fas fa-chevron-left"></i>
+                 </a>
+             </div>
+            </div>
+            <div class="user-most-viewed-grid-column-container" style="border-left:none ;">
+             <div class="user-most-viewed-grid-column-title">
+                 <h5>گوشی موبایل</h5>
+                 <p>براساس بازدیدهای شما</p>
+             </div>
+             <div class="user-most-viewed-grid-column-img-container">
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img1.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img2.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img3.jpg" alt=""></div>
+                <div><img class="img-fluid" src="./images/user-most-viewed-img/img4.jpg" alt=""></div>
+ 
+             </div>
+             <div class="user-most-viewed-grid-column-link-container d-flex justify-content-center py-3">
+                 <a href="#" class="d-flex align-items-center">
+                     <div class="mx-2">مشاهده</div>
+                     <i class="fas fa-chevron-left"></i>
+                 </a>
+             </div>
+            </div>
+            
+         </div>
+
+         <!-- ----- user-most-viewed-section ----- -->
+
+         <!-- ----- top-sale-swiper ----- -->
+
+         <div class="top-sale-slider-container border rounded-4 my-4">
+            <div class="text-center my-4 position-relative">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="fas fa-fire mx-2" style="color: #f9a825;"></i>
+                    <h4>پرفروش‌ترین‌ کالاها</h4>
+                </div>
+                <a href="#" class="top-sale-slider-see-more-text">مشاهده همه</a>
+            </div>
+            <div class="top-sale-swiper topSaleSwiper overflow-hidden mb-4 position-relative">
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                  
+                    <div class="top-sale-grid-row-container">
+                       <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img1.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۲</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">گوشی موبایل سامسونگ مدل </p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img3.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۳</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">خودکار فوق روان نانو آنتی باکتریال پنتر</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+               
+                  </div>
+                  <div class="swiper-slide">
+                  
+                    <div class="top-sale-grid-row-container">
+                       <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img4.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۴</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">زعفران درجه یک مصطفوی - 4.608 گرم</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img5.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۵</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">قرص جوشان ویتامین سی 1000 میلی گرمی</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img6.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۶</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">پوشک مای بیبی آبی سری مهربان</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+               
+                  </div>
+                  <div class="swiper-slide">
+                  
+                    <div class="top-sale-grid-row-container">
+                       <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img7.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۷</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img8.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۸</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img3.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۹</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+               
+                  </div>
+                  <div class="swiper-slide">
+                  
+                    <div class="top-sale-grid-row-container">
+                       <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img7.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۰</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img8.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۱</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img3.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۲</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+               
+                  </div>
+              
+                  <div class="swiper-slide">
+                  
+                    <div class="top-sale-grid-row-container">
+                       <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img7.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۳</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img8.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۴</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img3.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۵</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+               
+                  </div>
+                  <div class="swiper-slide">
+                  
+                    <div class="top-sale-grid-row-container">
+                       <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img7.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۶</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img8.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۷</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                      <a href="#"> 
+                        <div class="top-sale-grid-column-container position-relative">
+                            <div class="top-sale-grid-col-img-container">
+                                <img src="./images/top-sale-slider-img/img3.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="top-sale-item-number">۱۸</p>
+                            </div>
+                            <div class="w-100">
+                                <p class="top-sale-item-description">هندزفری بلوتوثی مدل  inpods 12</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+               
+                  </div>
+                  
+                    
+                </div>
+                
+                
+            <div class="top-sale-swiper-pagination"></div>
+            <div class="top-sale-swiper-button-next swiper-button-disabled">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="top-sale-swiper-button-prev swiper-button-disabled">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+             
+        </div>
+              
+                   
+        </div>
+
+        <!-- ----- end top-sale-swiper ----- -->
+
+        <!-- ----- top-discount-products ----- -->
+        
+        <div class="top-discount-products-container rounded-4 py-3 px-5 border">
+            <div class="top-discount-products-title-container d-flex justify-content-center align-items-center mb-4">
+                <div>
+                    <i class="fa-solid fa-percent" style="color: red;"></i>
+                </div>
+                <h4 class="mx-2">منتخب محصولات تخفیف و حراج</h4>
+            </div>
+            <div class="top-discount-products-grid-container">
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img1.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۴۰٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۱۵۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۵۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img4.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۲۳٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۵۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۸۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img3.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۳٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img1.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۳۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۵۲۱,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img7.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۱۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۴۵۶,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img6.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۱۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۴۵۶,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img1.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۴۰٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۱۵۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۵۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img4.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۲۳٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۵۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۸۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img3.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۳٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img1.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۳۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۵۲۱,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img7.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۱۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۴۵۶,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img6.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۱۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۴۵۶,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img1.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۴۰٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۱۵۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۵۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img4.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۲۳٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۵۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۸۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img3.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۳٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۶۷,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img1.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۳۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۵۲۱,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img7.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۱۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۴۵۶,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                <a href="#">                    
+                    <div class="top-discount-producst-items d-flex flex-column align-items-center p-1">
+                        <div class="top-discount-products-img-container overflow-hidden rounded-2" style="width: 150px; height: 150px;">
+                            <img class="img-fluid" src="./images/top-discount-products-img/img6.jpg" alt="">
+                        </div>
+                        <div class="top-discount-products-price d-flex flex-column w-100">
+                           <div class="d-flex align-items-center justify-content-between">
+                                <div class="discount-label discount-percentage px-2">۱۵٪</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="top-discount-products-off-price off-price">۴۲۰,۴۵۰</span>
+                                    <span class="t-label">تومان</span>
+                                </div>
+                           </div>
+                               
+                           <div class="top-discount-products-main-price main-price">۴۵۶,۰۰۰</div>
+                             
+                        </div>
+                    </div>
+                </a>
+                
+               
+            </div>
+            <a href="#" class="top-sale-products-see-more-items d-flex justify-content-center align-items-center mb-2 mt-4">
+                <div class="d-flex align-items-center">
+                    
+                    <p>مشاهده بیشتر</p>
+                    <i class="fas fa-chevron-left pt-1 px-2"></i>
+
+                </div>
+            </a>    
+    
+        </div>
+        <!-- ----- end top-discount-products ----- -->
+
+        <!-- ----- digi-magazine ----- -->
+
+        <div class="digimagazine-container my-2">
+            <div class="digimagazine-title d-flex align-items-center justify-content-between py-4">
+                <p>خواندنی‌ها</p>
+                <p class="digimagazine-topleft-readmore-text">مطالب بیشتر در دیجی‌کالا مگ</p>
+            </div>
+            <div class="digimagazine-cards-grid-container">
+                <div class="digimagazine-cards-items-container border rounded-2">
+                    <div class="d-flex flex-column">
+                        <div>
+                            <img class="img-fluid" src="./images/digi-magazine-img/img1.jpg" alt="">
+                        </div>
+                        <div class="px-4 mt-3 mb-2" style="text-align: right;">
+                            <p class="digimagazine-cards-subtitle">
+                                رشد سامسونگ در فروش ساعت هوشمند در سه ماه دوم امسال بسیار بیشتر از اپل بوده است
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="digimagazine-cards-items-container border rounded-2">
+                    <div class="d-flex flex-column">
+                        <div>
+                            <img class="img-fluid" src="./images/digi-magazine-img/img2.jpg" alt="">
+                        </div>
+                        <div class="px-4 mt-3 mb-2" style="text-align: right;">
+                            <p class="digimagazine-cards-subtitle">
+                                اینستاگرام روی قابلیت اشتراک‌گذاری مجدد پست کار می‌کند
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="digimagazine-cards-items-container border rounded-2">
+                    <div class="d-flex flex-column">
+                        <div>
+                            <img class="img-fluid" src="./images/digi-magazine-img/img3.jpg" alt="">
+                        </div>
+                        <div class="px-4 mt-3 mb-2" style="text-align: right;">
+                            <p class="digimagazine-cards-subtitle">
+                                اینتل ویژگی‌های کارت‌های گرافیک جدید سری Arc را اعلام کرد
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="digimagazine-cards-items-container border rounded-2">
+                    <div class="d-flex flex-column">
+                        <div>
+                            <img class="img-fluid" src="./images/digi-magazine-img/img4.jpg" alt="">
+                        </div>
+                        <div class="px-4 mt-3 mb-2" style="text-align: right;">
+                            <p class="digimagazine-cards-subtitle">
+                                مایکروسافت تسکبار مخصوص تبلت را بار دیگر به ویندوز ۱۱ می‌آورد
+                            </p>
+                        </div>
+                    </div>
+                </div>     
+                
+            </div>
+        </div>
+        <!-- ----- digi-magazine ----- -->
+
+        </div>
+      
+    </section>
+
+    <footer class="mt-4" style="border-top:1px solid #f0f0f1;">
+        <div class="footer-container mx-auto px-3 pt-5">
+            <div class="d-sm-flex align-items-stretch justify-content-between ">
+                <div class="digi-footer-logo" style="height: 30px;">
+                    <img class="img-fluid h-100" src="./images/digi-footer-logo.svg" alt="">
+                </div>
+                
+            
+                <a href="#">
+                    <button class="back-to-top-btn d-flex justify-content-center align-items-center border py-2 px-3 rounded-3">
+                        <span>بازگشت به بالا</span>
+                        <i class="fas fa-chevron-up px-2"></i>
+                    </button>
+                </a> 
+            </div>
+            <div class="digi-support-info mt-2">
+                <p>تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
+                <div class="px-4 hide-on-lg">|</div>
+                <p>۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
+            </div>
+            <div class="digi-shopping-service-container container my-5">
+                <div class="digi-shopping-service-grid-container">
+                    <div class="digi-shopping-service-item-container d-flex align-items-center flex-column">
+                        <div>
+                            <img src="./images/digi-footer-icons & imgs/express-delivery.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="digi-shopping-service-item-subtitle">اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس</p>
+                        </div>
+                    </div>
+                    <div class="digi-shopping-service-item-container d-flex align-items-center flex-column">
+                        <div>
+                            <img src="./images/digi-footer-icons & imgs/cash-on-delivery.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="digi-shopping-service-item-subtitle">اﻣﮑﺎن پرداخت در محل</p>
+                        </div>
+                    </div>
+                    <div class="digi-shopping-service-item-container d-flex align-items-center flex-column">
+                        <div>
+                            <img src="./images/digi-footer-icons & imgs/support.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="digi-shopping-service-item-subtitle">۷ روز هفته ، ۲۴ ﺳﺎﻋﺘﻪ</p>
+                        </div>
+                    </div>
+                    <div class="digi-shopping-service-item-container d-flex align-items-center flex-column">
+                        <div>
+                            <img src="./images/digi-footer-icons & imgs/days-return.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="digi-shopping-service-item-subtitle">هفت روز ضمانت بازگشت کالا</p>
+                        </div>
+                    </div>
+                    <div class="digi-shopping-service-item-container d-flex align-items-center flex-column">
+                        <div>
+                            <img src="./images/digi-footer-icons & imgs/original-products.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="digi-shopping-service-item-subtitle">ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="digi-footer-links mb-5">
+                <div class="digi-footer-links-grid-container">
+                    
+                    <div class="digi-footer-links-with-digikala d-flex flex-column align-items-start gap-3">
+                        <p class="digi-footer-links-title">با دیجی‌کالا</p>
+                        <a href="#" class="digi-footer-links-subtitle">اتاق خبر دیجی‌کالا</a>
+                        <a href="#" class="digi-footer-links-subtitle">فروش در دیجی‌کالا</a>
+                        <a href="#" class="digi-footer-links-subtitle">فرصت‌های شغلی</a>
+                        <a href="#" class="digi-footer-links-subtitle">گزارش تخلف در دیجی‌کالا</a>
+                        <a href="#" class="digi-footer-links-subtitle">تماس با دیجی‌کالا</a>
+                        <a href="#" class="digi-footer-links-subtitle">درباره دیجی‌کالا</a>
+                    </div>
+                    <div class="digi-footer-links-customer-service d-flex flex-column align-items-start gap-3">
+                        <p class="digi-footer-links-title">خدمات مشتریان</p>
+                        <a href="#" class="digi-footer-links-subtitle">پاسخ به پرسش‌های متداول</a>
+                        <a href="#" class="digi-footer-links-subtitle">رویه‌های بازگرداندن کالا</a>
+                        <a href="#" class="digi-footer-links-subtitle">شرایط استفاده</a>
+                        <a href="#" class="digi-footer-links-subtitle">حریم خصوصی</a>
+                        <a href="#" class="digi-footer-links-subtitle">گزارش باگ</a>
+                    </div>
+                    <div class="digi-footer-links-digikala-shopping-guide d-none d-md-flex flex-column align-items-start gap-3">
+                        <p class="digi-footer-links-title">راهنمای خرید از دیجی‌کالا</p>
+                        <a href="#" class="digi-footer-links-subtitle">نحوه ثبت سفارش</a>
+                        <a href="#" class="digi-footer-links-subtitle">رویه‌ارسال سفارش</a>
+                        <a href="#" class="digi-footer-links-subtitle">شیوه‌های پرداخت</a>
+                    </div>
+                 
+                    <div class="digi-footer-links-social-media d-flex flex-column align-items-start justify-content-start gap-3">
+                        
+                          <div class="digi-footer-links-social-media-content-container">
+                            <p class="digi-footer-links-title">همراه ما باشید!</p>
+                            <div class="digi-footer-links-social-media-icon-container d-flex align-items-start gap-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                </svg>
+
+                            </div>
+                         
+                        </div>
+                        <form class="w-100 d-flex flex-column gap-3">
+                            
+                            <p class="font-md digi-footer-links-title w-100 d-none d-md-block" style="word-spacing: 3px;">با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</p>
+                           
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="digi-footer-email-input-container rounded-3 flex-grow-1">
+                                    <input class="digi-footer-email-input"  type="search" name="" id="" placeholder="ایمیل شما">
+                                </div>
+                                <button type="submit" class="digi-footer-submit-button">ثبت</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="digi-footer-banner-container mb-5">
+                <div class="digi-footer-banner-content-container overflow-hidden">
+                <div class="digi-footer-banner-right-side-container d-flex align-items-center flex-grow-1 flex-shrink-0">
+                    <div class="digi-footer-banner-right-side-logo2" style="width: 44px; height: 44px;">
+                        <img class="img-fluid" src="./images/digi-footer-banner-imgs/footerlogo2.png" alt="">
+                    </div>
+                    <div class="digi-footer-banner-right-side-text">
+                        <p>دانلود اپلیکشن دیجی کالا</p>
+                    </div>
+
+                </div>
+                <div class="digi-footer-banner-left-side-item-container">
+                    <a href="#">
+                        <div class="digi-footer-banner-left-side-img-container">
+                            <img src="./images/digi-footer-banner-imgs/google-play.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="digi-footer-banner-left-side-img-container">
+                            <img src="./images/digi-footer-banner-imgs/coffe-bazzar.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="digi-footer-banner-left-side-img-container">
+                            <img src="./images/digi-footer-banner-imgs//myket.svg" alt="">
+                        </div>
+                    </a>
+                  
+                    <a href="#">
+                        <div class="digi-footer-banner-left-side-img-container">
+                            <img src="./images/digi-footer-banner-imgs/sib-app.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="hide-on-lg">
+                        <div class="digi-footer-banner-left-side-img-container bg-white">
+                            <img src="./images/digi-footer-banner-imgs/More.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="digi-footer-banner-more-info-text">
+                    <p>اطلاعات بیشتر</p>
+                    <i class="fas fa-chevron-left pt-1"></i>
+                </div>
+            </div>
+            </div>
+            <div class="digi-footer-about-digikala-container">
+                <div class="digi-footer-about-digikala-content-container border-top border-bottom py-5">
+                    <div class="digi-footer-about-digikala-description">
+                        <h1 class="digi-footer-about-digikala-description-title">فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h1>
+                        <p class="digi-footer-about-digikala-description-text ps-5">
+                            یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+                        </p>
+                        <div class="digi-footer-about-digikala-description-see-more-items">
+                            <p>مشاهده بیشتر</p>
+                            <i class="fas fa-chevron-left pt-1"></i>
+                        </div>
+                    </div>
+                    <div class="digi-footer-about-digikala-e-signs-img-container gap-2">
+                        <a href="#">
+                            <div class="border p-3 rounded-2">
+                                <div style="width: 75px; height: 75px;">
+                                <img class="img-fluid" src="./images/rezi.png" alt="" style="width: 75px; height: 75px; object-fit: contain;">
+                            </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="border p-3 rounded-2">
+                                <div style="width: 75px; height: 75px;">
+                                <img class="img-fluid" src="./images/kasbokar.png" alt="" style="width: 75px; height: 75px; object-fit: contain;">
+                            </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="border p-3 rounded-2">
+                                <div style="width: 75px; height: 75px;">
+                                <img class="img-fluid" src="./images/enamad.png" alt="" style="width: 75px; height: 75px; object-fit: contain;">
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="digikala-copy-rights-text-container py-4 d-flex align-items-center justify-content-center">
+                    برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.
+
+                </div>
+            </div>
+        </div>
+        <div class="digi-footer-partnership-container">
+            <div class="digi-footer-partnership-grid-container">
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digiclub.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digiexpress.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digikala-business.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digistyle.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digiclub.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digiexpress.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digikala-business.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digistyle.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digiclub.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digiexpress.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digikala-business.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digistyle.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digiclub.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digiexpress.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digikala-business.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-flex align-items-center digistylerow">
+                    <div class="digi-footer-partnership-img-container px-3 py-4 border-bottom border-start">
+                       <div class="d-flex align-items-center justify-content-center w-100" style="height: 20px;">
+                            <img src="./images/digi-partnership-img/digistyle.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+
+
+                
+            </div>
+        </div>
+
+    </footer>
+ 
+</body>
+</html>

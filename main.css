@@ -1,0 +1,1530 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Yekan !important;
+    font-weight: 600 !important;
+    background-color: rgb(255, 255, 255);
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    color: #000000;
+}
+
+p {
+    margin: 0;
+}
+.font-yekan-w500 {
+
+    font-family: Yekan;
+    font-weight: 500;
+}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 6; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+header {
+    width: 100%;
+    height: 168px;
+    position: relative;
+    
+   
+
+}
+.mobile-menu-container {
+    display: none;
+}
+.header-container {
+ background-color: #fff;
+ width: 100%;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 4;
+
+
+}
+
+.top-banner {
+    width: 100%;
+    height: 60px;
+}
+.top-banner img {
+    height: 100%;
+    width: 100%;
+}
+.logo-container {
+    width: 115px;
+    height: 30px;
+    margin-left: 15px;
+}
+.logo-container a {
+    background-image: url('./images/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.mobile-logo-container {
+    width: 115px;
+    height: 30px;
+    margin-left: 15px;
+    display: none;
+}
+.mobile-logo-container a {
+    background-image: url('./images/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.search-input-container {
+    background-color: #f0f0f1;
+    width: 644px;
+    height: 40px;
+    padding: 0px 16px;
+    border-radius: 10px;
+    
+    
+    
+}
+.search-input-container i {
+    color: #a1a3a8;
+}
+
+.search-input-container input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-family: Yekan;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.login-button {
+    border: 1px solid #a1a3a8;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-left: 15px;
+    
+}
+.login-link {
+    font-family:Yekan;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 4px 4px 0;
+    font-size: 14px;
+}
+.shopping-cart {
+    border-right: 1px solid #a1a3a8;
+    cursor: pointer;
+}
+.shopping-cart i {
+    margin-right: 10px;
+}
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 42px;
+    z-index: 3;
+    top: 125px;
+    left: 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: iranyekanwebmedium;
+    background-color: #fff;
+    border-bottom: 1px solid #dcdce0;
+    /* background-color: blue; */
+}
+
+.animated-border-bottom {
+    width: 0px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: 0;
+    transition: 0.3s all;
+}
+
+
+.nav-col-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+.navbar-links-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #424750;
+    font-weight: 600;
+    font-size: 13px;
+   
+}
+.navbar-links-container i {
+    margin-left: 5px;
+}
+.nav-links:hover {
+    color: #424750;
+}
+
+.navbar-links-container:hover .mega-menu-drop-down-container {
+    transition: 0.1s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+.categories {
+    font-size: 15px;  
+    font-weight: 600;
+}
+
+.supermarket i {
+    border-right: 1px solid #a1a3a8;
+
+}
+
+.location-left-arrow {
+    display: none;
+}
+
+.mega-menu-drop-down-container {
+    width: 1525px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 42px;
+    z-index: 8;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 14%), 0 4px 8px rgb(0 0 0 / 30%);
+}
+
+.mega-menu-drop-down-right-col-link {
+    display: flex;
+    align-items: center;
+    padding: 16px 10px;
+    color: #424750;
+    font-weight: 500;
+    font-family: iranyekanwebregular;
+    border-left: 1px solid #f0f0f1;
+  
+}
+.mega-menu-drop-down-right-col-link:hover {
+    color: red;
+    background-color: #f6f6f6;
+}
+
+.mega-menu-drop-down-mid-col-links-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex: 1;
+    height: 100%;
+}
+.mega-menu-drop-down-mid-col-ul {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.mega-menu-drop-down-mid-col-title-link {
+    border-right: 2px solid red;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+
+.mega-menu-drop-down-mid-col-sub-links {
+    font-size: 12px;
+    color: #424750;
+    font-weight: 500;
+    display: block;
+    margin-top: 14px;
+}
+
+.hover:hover {
+    color: red;
+}
+
+/* Swiper --------------- Swiper */
+
+
+.swiper-button-disabled {
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    border: 1px solid rgb(191, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+
+
+  }
+  .show-on-mouseOver {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .swiper:hover .show-on-mouseOver {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.1s ease-in-out;
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    font-size: 14px;
+    font-weight: 900;
+    color: #424750;
+}
+
+
+
+
+.swiper-button-next {
+        right: 55px !important;        
+}
+
+  .swiper-button-next,.swiper-button-prev {
+    top: 80% !important; 
+}
+.swiper-pagination-bullets {
+    
+    text-align: right;
+    right: 10px;
+   
+}
+.swiper-pagination-bullet {
+    background-color: #000000;
+    z-index: 99;
+
+}
+.swiper-pagination-bullet-active {
+    transition: 0.3s ease-out;
+    background-color: #fff;
+    width: 20px;
+    border-radius: 8px;
+}
+
+/* Swiper --------------- Swiper */
+
+.digi-servic-links-img-container {
+    width: 52px;
+    height: 52px;
+    
+}
+.digi-servic-links span {
+    font-size: 12px;
+    font-family:Yekan;
+    
+}
+
+
+.digi-servic-links {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(8,auto);
+}
+.digi-servic-links a:hover {
+    color: #000000;
+}
+
+/* amazing-offer-box Swiper --------------- Swiper */
+.amazing-offer-swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: flex-start;
+  }
+
+.amazing-off-swiper-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  .amazing-offer-swiper-button-prev, .amazing-offer-swiper-button-next {
+    border: 1px solid rgb(191, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50% !important; 
+    transform: translate(50%,-50%);
+    z-index: 3;
+    cursor: pointer;
+ 
+  }
+
+.amazing-offer-swiper-button-prev:after,.amazing-offer-swiper-button-next:after {
+    content: '';
+    font-size: 14px;
+    font-weight: 900;
+    color: #424750;
+}
+
+
+.amazing-offer-swiper-button-next {
+    right: 25px !important;        
+}
+.amazing-offer-swiper-button-prev {
+    left: -15px !important;        
+}
+.show-on-hover {
+    display: none;
+}
+.amazing-offer-swiper:hover .show-on-hover{
+    display: flex;
+}
+/* amazing-offer-box Swiper --------------- Swiper */
+
+
+.price-container span {
+    font-size: 14px;
+    color: #424750;
+}
+.price-items {
+    padding: 0 5px;
+    
+}
+.main-price {
+    font-size: 12px !important;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.discount-percentage {
+    font-size: 12px;
+    background-color:  rgb(220,53,69);
+    color: #fff !important;
+    border-radius: 12px;
+    padding: 0 2px;
+}
+.amazing-offer-text-img {
+    width: 100% !important;
+    aspect-ratio: auto 92 / 77 !important ;
+    height: 77px !important;    
+    object-fit: contain !important; 
+    overflow: hidden !important; 
+    display: inline-block !important;
+}
+
+.amazing-offer-see-more-start-container {
+    font-size: 14px;
+    color: #ffffff;
+   
+}
+.pos-absolute {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%,-50%)
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #19bfd3;
+}
+.amazing-supermarket-discount {
+    border-radius: 20px;
+    background: linear-gradient(267.6deg,rgba(57, 174, 0,.5) 0,rgba(242,242,242,1) 100%);
+}
+
+.amazing-discounts {
+    padding: 0px 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 2;
+    word-spacing: 3px;
+    font-family: Yekan;
+    font-weight: 500;
+}
+.amazing-discount-circle-img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+
+}
+.amazing-discount-circle-img-container a {
+    margin: 0 3px;
+}
+.more-product-link {
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: rgb(57, 174, 0);
+    padding: 12px 20px;
+}
+.more-product-link:hover {
+    color: rgb(57, 174, 0);;
+}
+
+.digi-discount-cards-container {
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.digi-category-item-container {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content: space-between;
+    
+}
+.digi-discount-cards-container img {
+    border-radius: 16px;
+    object-fit: cover;
+    width: 100%;
+    cursor: pointer;
+}
+.digi-category-img-container {
+    width: 150px;
+    height: 150px;
+
+}
+.digi-category-item-container p {
+    font-size: 13px;
+    margin: 8px 0 0;
+    color: #424750;
+}
+.digi-discount-banner {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+} 
+.digi-discount-banner img {
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/* digi-offer swiper --------------- swiper */
+
+.digi-offer-multicolumn-swiper {
+    width: 100%;
+    height: 100%;
+ }
+ .digi-offer-multicolumn-swiper a:nth-child(1) {
+    border-bottom: 1px solid #ededee;
+
+ }
+ .digi-offer-multicolumn-swiper a {
+
+    border-right: 1px solid #ededee;
+ }
+
+ 
+ .digi-offer-multicolumn-swiper-slide-img-container {
+    width: 84px;
+    height: 84px;
+    background-color: #f0f1f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+ }
+ .digi-offer-multicolumn-swiper-slide-img-container img {
+    mix-blend-mode: multiply;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+
+.digi-offer-multicolumn-swiper-container p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.15; 
+}
+
+.digi-offer-multicolumn-swiper-button-prev, .digi-offer-multicolumn-swiper-button-next {
+    border: 1px solid rgb(191, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50% !important; 
+    transform: translate(50%,-50%);
+    z-index: 3;
+    cursor: pointer;
+    color: #424750;
+
+}
+.digi-offer-multicolumn-swiper-button-next {
+    right: 25px !important;        
+}
+.digi-offer-multicolumn-swiper-button-prev {
+    left: -15px !important;        
+}
+.digi-offer-multicolumn-swiper:hover .show-on-hover {
+    display: flex;
+}
+/* digi-offer swiper --------------- swiper */
+
+
+/* popular-brand swiper --------------- swiper */
+.popular-brands-swiper-container .swiper-slide  {
+    border-right: 1px solid #ededee;
+}
+.popular-brands-img-container {
+    width: 110px;
+    height: 110px;
+}
+.popular-brands-img-container img {
+    object-fit: contain;
+}
+.popular-brands-swiper-button-prev, .popular-brands-swiper-button-next {
+    border: 1px solid rgb(191, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 60% !important; 
+    transform: translate(50%,-50%);
+    z-index: 3;
+    cursor: pointer;
+    color: #424750;
+
+}
+.popular-brands-swiper-button-next {
+    right: 25px !important;        
+}
+.popular-brands-swiper-button-prev {
+    left: -15px !important;        
+}
+.popular-brands-swiper-container:hover .show-on-hover {
+    display: flex;
+}
+
+/* popular-brand swiper --------------- swiper */
+
+.user-most-viewed-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    border: 1px solid #dcdce0;
+    
+}
+.user-most-viewed-grid-column-container {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #d6d6d8;
+    padding: 0 5px;
+
+}
+.user-most-viewed-grid-column-title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #424750;
+    opacity: 0.7;
+}
+.user-most-viewed-grid-column-img-container {
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
+    
+    gap: 1px;
+    background-color: #ededee;
+    
+    
+}
+
+.user-most-viewed-grid-column-img-container img {
+    cursor: pointer;
+    
+   
+}
+
+.user-most-viewed-grid-column-link-container a {
+    font-size: 13px;
+    color: #19bfd3;
+}
+.digiplus-especial-services-container {
+    background-color: #941b80;
+}
+.digiplus-especial-services-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+}
+.digiplus-especial-services-right-col {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    
+}
+.digiplus-signup-button {
+    width: 105px; 
+    border: 1px solid #ffffff; 
+    padding: 8px 16px; 
+    border-radius: 10px; 
+    margin: 10px 0;
+    
+}
+.digiplus-signup-button a {
+    color: #fff;
+}
+
+.digiplus-especial-services-gifts {
+    display:grid; 
+    grid-template-columns: repeat(3,auto);
+    gap: 10px;
+    margin-top: 10px;
+
+}
+.digiplus-especial-services-left-col i {
+    color: #941b80;
+}
+.digiplus-especial-services-more-items {
+    color: #941b80;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.digiplus-especial-services-more-items:hover {
+    color: #941b80;
+}
+
+.digiplus-especial-services-left-col-title {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.digiclub-banner-container {
+    background: linear-gradient(76.02deg,#35a6c8 33.32%,#007295 71.55%),
+    radial-gradient(21.29% 87.33% at 50% 50.67%,#7cf2f6 0,#35a6c8 100%);
+    box-sizing: border-box;
+}
+.digiclub-banner-items {
+    background-color: #fff;
+    
+}
+
+.digiclub-banner-left-side-container {
+    
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.digiclub-banner-items span {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.digiclub-banner-items i{
+    color: #19bfd3;
+
+}
+
+
+/* top-sale swiper --------------- swiper */
+
+.top-sale-slider-see-more-text {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    color: #19bfd3;
+}
+.top-sale-slider-see-more-text:hover {
+    color: #19bfd3;
+}
+
+.top-sale-grid-row-container{
+    display: grid;
+    grid-template-rows: 3;
+    justify-content: start;
+    gap: 15px;
+    
+}
+
+.top-sale-grid-column-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto); 
+    align-items:center;
+}
+.top-sale-grid-col-img-container img {
+    object-fit: contain;
+}
+.top-sale-item-number {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 2.1;
+    margin-left: 12px; 
+    color: #19bfd3;
+}
+.top-sale-item-description {
+    font-size: 12px; 
+    font-weight: 500; 
+    text-align: right;
+    color: #424750;
+}
+
+/* .top-sale-grid-row-container a::before {
+    background-color: #323437;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+   
+} */
+
+.top-sale-swiper-container .swiper-slide  {
+    border-right: 1px solid #ededee;
+}
+.top-sale-img-container {
+    width: 110px;
+    height: 110px;
+}
+.top-sale-img-container img {
+    object-fit: contain;
+}
+.top-sale-swiper-button-prev, .top-sale-swiper-button-next {
+    border: 1px solid rgb(191, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:50% !important; 
+    transform: translate(50%,-50%);
+    z-index: 3;
+    cursor: pointer;
+    color: #424750;
+
+}
+.top-sale-swiper-button-next {
+    right: 25px !important;        
+}
+.top-sale-swiper-button-prev {
+    left: -15px !important;        
+}
+
+
+/* top-sale swiper --------------- swiper */
+
+.top-discount-products-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1px;
+    background-color: #dcdce0;   
+}
+.top-discount-products-grid-container a{
+    background-color: #fff;
+}
+
+.top-discount-products-off-price {
+    color: #424750 !important;
+    padding-left: 4px;
+}
+.t-label {
+    font-size: 12px;
+    color: #424750;
+}
+.top-discount-products-main-price {
+    text-align: center;
+    font-size: 14px !important;
+
+}
+.top-sale-products-see-more-items {
+    color: #19bfd3;
+    font-size: 14px;
+}
+.top-sale-products-see-more-items:hover {
+    color: #19bfd3;
+}
+.digimagazine-cards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: stretch;
+    gap: 10px;
+    overflow: hidden;
+}
+.digimagazine-cards-subtitle {
+    font-size: 13px;
+    color: #424750;
+    font-weight: 400;
+}
+.digimagazine-cards-items-container {
+    overflow: hidden;
+}
+.digimagazine-topleft-readmore-text {
+    color: #19bfd3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.back-to-top-btn {
+    color: #424750;
+    font-size: 13px;
+}
+.digi-support-info {
+    font-size: 14px;
+    color: #424750;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    row-gap: 10px;
+
+}
+.digi-shopping-service-grid-container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+}
+.digi-shopping-service-item-container {
+    cursor: pointer;
+}
+.digi-shopping-service-item-subtitle {
+    font-size: 13px;
+    color: #424750;
+    font-weight: 400;
+}
+.digi-footer-links-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.digi-footer-links-title {
+    font-size: 17px;
+    font-weight: 400;
+    color: #424750;
+}
+.digi-footer-links-subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    color: #81858b;
+}
+.digi-footer-links-social-media-icon-container svg {
+    color: #a1a3a8;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.digi-footer-links-social-media-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.digi-footer-email-input-container {
+    background-color: #f0f0f1;
+    flex-grow: 1;
+    padding: 12px 16px;
+    border-radius: 10px;
+
+}
+
+.digi-footer-email-input {
+    font-size: 16px;
+    color: #424750;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+
+}
+.digi-footer-submit-button {
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #c0c2c5;
+    color: #fff;
+    opacity: 0.7;
+}
+
+
+.digi-footer-banner-container {
+    background-color: #3c4b6d;
+    border-radius: 8px;
+    padding: 16px 20px;
+}
+.digi-footer-banner-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.digi-footer-banner-right-side-text {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 16px 0 0;
+}
+.digi-footer-banner-left-side-item-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.digi-footer-banner-left-side-img-container {
+    height: 44px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.digi-footer-banner-left-side-img-container img {
+    height: 100%;
+}
+.digi-footer-banner-more-info-text {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    display: none;
+}
+.digi-footer-about-digikala-content-container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+   
+    
+}
+.digi-footer-about-digikala-description {
+    width: 55%;
+}
+.digi-footer-about-digikala-e-signs-img-container {
+    display: flex; 
+    align-items:flex-start;
+    justify-content: flex-end;
+    width: 45%;
+}
+
+.digi-footer-about-digikala-description-title {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+.digi-footer-about-digikala-description-text {
+    color: #81858b;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.17;
+    word-spacing: 2px;
+    text-align: justify;
+
+}
+.digi-footer-about-digikala-description-see-more-items {
+    font-size: 14px;
+    font-weight: 400;
+    color: #19bfd3;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.digikala-copy-rights-text-container {
+    line-height: 2.17; 
+    font-size: 13px; 
+    font-weight: 400; 
+    color: #81858b;
+    text-align: justify;
+
+
+}
+.digi-footer-partnership-grid-container {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.digi-footer-partnership-img-container {
+    background-color: #f0f0f1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.digi-footer-partnership-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media (max-width:1400px) {
+    .amazing-discounts {
+        display: none;
+    }
+    .font-md {
+        font-size: 15px;
+        word-spacing: 0 !important;
+    }
+    
+}
+@media (max-width:1200px) {
+    .remove-on-xl {
+        display: none;
+    }
+    
+    .digi-category-img-container {
+            width: 90px;
+            height: 90px;
+        }
+        .digi-category-item-container {
+            grid-template-columns: repeat(3,auto);
+    
+        }
+        .digiplus-especial-services-gifts {
+            grid-template-columns: repeat(2,auto);
+            row-gap: 30px;
+        }
+        .top-discount-products-grid-container {           
+            grid-template-columns: repeat(6,auto);
+            overflow-x: scroll;
+        }
+        .top-discount-producst-items {
+            padding-top: 20px !important;
+        }
+        .digimagazine-cards-grid-container {            
+            grid-template-columns: repeat(2,1fr);
+        }
+        .digi-footer-banner-left-side-item-container {
+            gap: 5px;
+        }
+    }
+    
+
+@media (max-width:1070px) {
+    .nav-col-container {
+        padding: 0 12px 0 6px;
+    }
+    .swiper-button-next,.swiper-button-prev {
+        top: 85% !important; 
+    }
+    .swiper-pagination-bullets {
+        
+        text-align: left;
+        right: -10px;
+        opacity: 1;
+       
+    }
+}
+
+
+@media (max-width:1020px) {
+    .top-banner {
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    .mobile-menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-container {
+        display: none;
+    }
+    .mobile-logo-container {
+        display: block;
+    }
+    .search-input-container {
+        width: auto;
+    }
+    .flex1 {
+      
+        margin-left: 10px;
+    }
+  
+    .login-link {
+        display: none;
+    }
+    
+    .hide-on-lg {
+        display: none;
+    }
+    .w100-on-mobile-view {
+        width: 100%;
+        flex: 1;
+        font-size: 10px;
+   
+    }
+    .location-left-arrow {
+        display: block;
+    }
+
+
+    .digi-servic-links {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        font-size: 12px;
+    }
+    .digi-servic-links span {
+        padding: 10px 0;
+    }
+    .hamburgermenu-container {
+        display: block;
+    }
+    .digi-discount-cards-container {
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    .user-most-viewed-grid-container {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .user-most-viewed-grid-column-container {
+        border-left: none;
+        border-bottom: 1px solid #d6d6d8;
+       
+    }
+    .user-most-viewed-grid-column-img-container {
+        
+        background-color: transparent;
+    }
+   .user-most-viewed-grid-column-container:last-child {
+        border-bottom: none;
+    }
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+    .digiplus-especial-services-grid-container {
+        grid-template-columns: repeat(1,1fr); 
+    }
+
+    .digiplus-especial-services-gifts {
+        grid-template-columns: repeat(3,100px);
+        justify-content: space-between;
+    }
+    .ghost-element {
+        width: auto !important;
+
+    }
+    .digiclub-banner-container {
+        display: block !important;
+    }
+    .digiclub-banner-left-side-container {
+        justify-content: center !important;
+        margin-top: 10px;
+    }
+    .digiclub-banner-items a {
+       flex-direction: column;
+       padding-top: 10px;
+    }
+    .top-discount-products-grid-container {            
+        grid-template-columns: repeat(2,1fr);
+    }
+    .digi-support-info {
+        flex-direction: column;
+    }
+    .digi-shopping-service-container {
+        display: none;
+    }
+    
+    .digi-footer-links-title {
+        font-size: 15px;
+
+    }
+    .digi-footer-links-subtitle {
+        font-size: 13px;
+    }
+
+    .digi-shopping-service-container {
+        display: none;
+    }
+    .digi-footer-links-grid-container {
+        margin-top: 40px;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+    }
+    .digi-footer-links-digikala-shopping-guide {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .digi-footer-links-social-media {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+    }
+    .digi-footer-links-social-media-content-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .digi-footer-links-social-media-content-container svg {
+        width: 23px;
+        height: 23px;
+        
+    }
+    .digi-footer-links-social-media-icon-container {
+        gap: 20px !important;
+    }
+    .digi-footer-banner-content-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .digi-footer-banner-more-info-text {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .digi-footer-about-digikala-content-container {
+        flex-direction: column;
+    }
+    .digi-footer-about-digikala-description {
+        width: 100%;
+    }
+    .digi-footer-about-digikala-e-signs-img-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .digi-footer-partnership-grid-container {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .digistylerow {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+}
+
+@media (max-width:768px) {
+    
+    .swiper-button-next,.swiper-button-prev {
+        display: none;
+    }
+    .swiper-pagination-bullets {
+        text-align: center;
+        opacity: 1;
+       
+    }
+    .digi-servic-links {
+        font-size: 10px;
+        min-width: 250px
+    }
+    .amazing-supermarket-discount-fresh-img {
+        width: 150px;
+        height: 28px;
+    }
+    .digimagazine-cards-grid-container {
+  
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .social-media-icon-container {
+        gap: 10px !important;
+    }
+    .digi-footer-banner-left-side-item-container {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        gap: 20px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .digi-category-item-container {
+        grid-template-columns: repeat(2,auto);
+
+    }
+
+    .remove-col-xl {
+        display: none;
+    }
+    .digiplus-especial-services-gifts {
+        grid-template-columns: repeat(2,100px);
+
+    }
+    .swiper-pagination-bullet {
+        display: none;
+    }
+    .digiclub-banner-left-side-items {
+        flex-direction: column;
+    }
+    .top-sale-slider-see-more-text {
+        top: 40px;
+    }
+    .top-discount-products-container {
+        border: none !important;
+        padding: 0 !important;
+    }
+    .top-discount-products-title-container h4,i {
+        font-size: 16px !important;
+    }
+    .back-to-top-btn  {
+        margin: 20px 0;
+    } 
+
+}
+
+
+@media (max-width:400px) {
+    .digi-footer-banner-left-side-item-container {
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+
+    }
+    .digi-footer-banner-right-side-text {
+        font-size: 14px;
+    }
+    .digi-footer-banner-left-side-item-container a img {
+        width: 100%;
+    }
+    .digi-footer-banner-right-side-container {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .digi-footer-about-digikala-description-title {
+        font-size: 14px;
+    }
+    .digi-footer-about-digikala-description-text {
+        font-size: 12px;
+    }
+    .digi-footer-about-digikala-content-container {
+        overflow-x: scroll;
+    }
+
+
+}
+
+@media (max-width:300px) {
+    .fa-close {
+        padding-left: 50px;
+        transition: 0.3s;
+    }
+    .digi-servic-links {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+  
+
+    } 
+    .digiplus-especial-services-left-col {
+        padding: 3px !important;
+    }
+    .digiplus-especial-services-gifts {
+        grid-template-columns: repeat(2,auto);
+
+    }
+    .top-discount-products-container {
+        border: none !important;
+        padding: 0 !important;
+    }
+
+}
